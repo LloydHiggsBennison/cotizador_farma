@@ -1,0 +1,27 @@
+{
+  "productCount": 8,
+  "firstProductHTML": "<div class=\"product clickable\"><div class=\"inner-product-box\"><div class=\"product-image\"><a href=\"/products/ambroxol-30mg-5ml-jarabe-100ml2?default_sku=586510&amp;queryID=60ae5db46e66c119ff59f7fc62b60c6a\"><div class=\"badge__misalcobrand\"><span class=\"img\"><img src=\"/packs/_/assets/images/msb-logo-781069d15114ca18bf8e550155ddbd40.jpg\" alt=\"Msb logo\"></span></div><img class=\"img-responsive\" alt=\"Ambroxol 30mg/5ml Jarabe 100ml\" src=\"https://static.salcobrandonline.cl/spree/products/105357/small/586510.jpg?1706195663\"><div class=\"overlay\"></div></a><ul class=\"links\"><li data-variant-id=\"55194\"><a href=\"/products/ambroxol-30mg-5ml-jarabe-100ml2/preview?default_sku=586510&amp;queryID=60ae5db46e66c119ff59f7fc62b60c6a\" data-remote=\"true\"><i class=\"fa fa-expand\"></i></a></li></ul></div><div class=\"info\"><a href=\"/products/ambroxol-30mg-5ml-jarabe-100ml2?default_sku=586510&amp;queryID=60ae5db46e66c119ff59f7fc62b60c6a\"><span class=\"product-name truncate\">Ambroxol</span><span class=\"product-info truncate\">Ambroxol 30mg/5ml Jarabe 100ml</span><div class=\"row option-value\"><div class=\"col-xs-12\"><span class=\"option-value-title\">formato:</span><span class=\"option-value-catalog\"><span>100ml</span></span></div></div><div class=\"product-prices\"><div class=\"jss4 jss8\"><div class=\"sale-price\"><div class=\"jss1 jss6\"><span class=\"display-price-normal\">$5.299</span></div></div></div></div><div class=\"jss5\"><div class=\"product-types\"><div class=\"row\"><div class=\"col-xs-12 col-sm-12 col-md-12\"><div class=\"sale_type not_drug\"></div></div><div class=\"col-xs-12 col-sm-12 col-md-12\"><div class=\"pickup_delivery\">Retiro en tienda</div><div class=\"package_delivery\">Despacho a domicilio</div></div><div class=\"col-xs-12 product-methods\"><div class=\"pago-excedentes\"><span class=\"icon\"><img src=\"/packs/_/assets/images/icons/excedentes-icon-78edc288d415cd0ceef65c060210edcb.svg\" alt=\"Excedentes icon\"></span><span class=\"txt\">Pago con excedentes</span></div></div></div></div></div></a><div class=\"add-to-",
+  "extractedData": {
+    "imgTest": {
+      "anyImg": {
+        "src": "/packs/_/assets/images/msb-logo-781069d15114ca18bf8e550155ddbd40.jpg",
+        "alt": "Msb logo",
+        "className": ""
+      },
+      "imgResponsive": {
+        "src": "https://static.salcobrandonline.cl/spree/products/105357/small/586510.jpg?1706195663",
+        "alt": "Ambroxol 30mg/5ml Jarabe 100ml"
+      },
+      "productImage": {
+        "src": "/packs/_/assets/images/msb-logo-781069d15114ca18bf8e550155ddbd40.jpg",
+        "alt": "Msb logo"
+      }
+    },
+    "nameTest": {
+      "imgAlt": "Msb logo",
+      "linkText": "",
+      "productNameClass": "Ambroxol"
+    },
+    "price": {}
+  }
+}

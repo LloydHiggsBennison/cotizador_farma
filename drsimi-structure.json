@@ -1,0 +1,48 @@
+{
+  "selector": "[class*=\"gallery\"]",
+  "count": 5,
+  "outerHTML": "<div id=\"gallery-layout-container\" class=\"vtex-search-result-3-x-gallery vtex-search-result-3-x-gallery--grid flex flex-row flex-wrap items-stretch bn ph1 na4 pl9-l\"><div data-af-element=\"search-result\" data-af-onclick=\"true\" data-af-search-id=\"416b2d8e14a946cd9e75d9e1547c90e2\" data-af-product-position=\"1\" data-af-product-id=\"731\" class=\"vtex-search-result-3-x-galleryItem vtex-search-result-3-x-galleryItem--normal vtex-search-result-3-x-galleryItem--grid pa4\" style=\"flex-basis: 50%; max-width: 50%;\"><section aria-label=\"ProductoParacetamol 500 mg 16 Comprimidos\" class=\"vtex-product-summary-2-x-container vtex-product-summary-2-x-containerNormal br3 h-100 w-100 flex flex-column justify-between center tc overflow-hidden\" style=\"max-width: 300px;\"><a href=\"/paracetamol-500-mg-16-comprimidos/p\" class=\"vtex-product-summary-2-x-clearLink h-100 flex flex-column\" aria-label=\"View product details for Paracetamol 500 mg 16 Comprimidos\"><article class=\"vtex-product-summary-2-x-element pointer pt3 ",
+  "className": "vtex-search-result-3-x-gallery vtex-search-result-3-x-gallery--grid flex flex-row flex-wrap items-stretch bn ph1 na4 pl9-l",
+  "children": [
+    {
+      "tag": "DIV",
+      "className": "vtex-search-result-3-x-galleryItem vtex-search-result-3-x-galleryItem--normal vtex-search-result-3-x-galleryItem--grid pa4",
+      "text": "Paracetamol 500 mg 16 Comprimidos Tratamiento Sintomatico De Estados Dolorosos Y Febriles.$480＋－COMP"
+    },
+    {
+      "tag": "DIV",
+      "className": "vtex-search-result-3-x-galleryItem vtex-search-result-3-x-galleryItem--normal vtex-search-result-3-x-galleryItem--grid pa4",
+      "text": "Paracetamol 80mg 16 Comprimidos Masticables - Sabor Tutifrutti Tratamiento Para La Fiebre Y De Dolor"
+    },
+    {
+      "tag": "DIV",
+      "className": "vtex-search-result-3-x-galleryItem vtex-search-result-3-x-galleryItem--normal vtex-search-result-3-x-galleryItem--grid pa4",
+      "text": "Paracetamol Infantil 100 mg/ml - Solución para gotas orales -15ml Analgésico, Antipirético.$1.400＋－C"
+    },
+    {
+      "tag": "DIV",
+      "className": "vtex-search-result-3-x-galleryItem vtex-search-result-3-x-galleryItem--normal vtex-search-result-3-x-galleryItem--grid pa4",
+      "text": "Paracetamol 125 mg 6 Supositorios Analgesicos, Antipireticos$1.400＋－COMPRAR   ➜"
+    },
+    {
+      "tag": "DIV",
+      "className": "",
+      "text": ""
+    },
+    {
+      "tag": "DIV",
+      "className": "",
+      "text": ""
+    },
+    {
+      "tag": "DIV",
+      "className": "",
+      "text": ""
+    },
+    {
+      "tag": "DIV",
+      "className": "",
+      "text": ""
+    }
+  ]
+}

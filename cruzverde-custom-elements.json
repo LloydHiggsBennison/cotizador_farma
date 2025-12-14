@@ -1,0 +1,62 @@
+{
+  "allCustomTags": [
+    "app-root",
+    "router-outlet",
+    "app-page",
+    "or-header",
+    "or-sidebar",
+    "at-icon",
+    "at-image",
+    "ml-window",
+    "ml-search-suggestions",
+    "at-loader",
+    "at-link",
+    "ml-form-field",
+    "at-button",
+    "ml-modal",
+    "ml-rich-text",
+    "or-modal-login-invited",
+    "or-modal-facebook-colombia",
+    "at-select",
+    "or-modal-login",
+    "or-side-cart",
+    "or-modal-location",
+    "or-swiper",
+    "or-swiper-horizontal",
+    "tpl-search-result",
+    "ml-breadcrumb",
+    "ml-heading",
+    "tpl-catalog",
+    "at-filter-necesidades",
+    "ml-new-card-product",
+    "ml-product-image-new",
+    "at-badge",
+    "ml-price-tag-v2",
+    "ml-pagination",
+    "or-modal-login-healthneeds",
+    "or-login-healthneeds",
+    "or-footer",
+    "ml-column-links",
+    "or-popup",
+    "or-modal-availability",
+    "or-modal-inscriptions-navigation",
+    "or-modal-recommended",
+    "or-modal-generic-error",
+    "or-modal-refrigerated",
+    "or-modal-covid-test"
+  ],
+  "productRelatedTags": [
+    "ml-new-card-product",
+    "ml-product-image-new"
+  ],
+  "samples": {
+    "ml-new-card-product": {
+      "count": 12,
+      "firstElement": "<ml-new-card-product _nghost-serverapp-c117=\"\" class=\"ng-star-inserted\"><div _ngcontent-serverapp-c117=\"\" class=\"max-w-xs w-full h-full border border-gray-light bg-white shadow text-center overflow-hidden\" style=\"border-radius: 8px;\"><!----><div _ngcontent-serverapp-c117=\"\" class=\"h-full flex flex-col ng-star-inserted\"><!----><!----><header _ngcontent-serverapp-c117=\"\" class=\"h-30 ng-star-inserted\"></header><!----><!----><div _ngcontent-serverapp-c117=\"\" class=\"flex flex-col justify-between py-8 px-16 flex-1\"><div _ngcontent-serverapp-c117=\"\"><div _ngcontent-serverapp-c117=\"\" class=\"relative flex justify-center\"><ml-product-image-new _ngcontent-serverapp-c117=\"\" class=\"w-full\" _nghost-serverapp-c120=\"\"><div _ngcontent-serverapp-c120=\"\" class=\"cursor-pointer relative md:w-auto h-full\"><!----><!----><div _ngcontent-serverapp-c120=\"\" class=\"absolute top-0 z-10 right-0 flex flex-col gap-4\"><!----><at-badge _ngcontent-serverapp-c120=\"\" class=\"ng-star-inserted\"><!----><svg viewBox=\"0 0 26 25"
+    },
+    "ml-product-image-new": {
+      "count": 12,
+      "firstElement": "<ml-product-image-new _ngcontent-serverapp-c117=\"\" class=\"w-full\" _nghost-serverapp-c120=\"\"><div _ngcontent-serverapp-c120=\"\" class=\"cursor-pointer relative md:w-auto h-full\"><!----><!----><div _ngcontent-serverapp-c120=\"\" class=\"absolute top-0 z-10 right-0 flex flex-col gap-4\"><!----><at-badge _ngcontent-serverapp-c120=\"\" class=\"ng-star-inserted\"><!----><svg viewBox=\"0 0 26 25\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" height=\"30px\" width=\"30px\" class=\"ng-star-inserted\"><rect x=\"1.14727\" y=\"0.480769\" width=\"24.0385\" height=\"24.0385\" rx=\"12.0192\" fill=\"#FEDB00\"></rect><rect x=\"1.14727\" y=\"0.480769\" width=\"24.0385\" height=\"24.0385\" rx=\"12.0192\" stroke=\"#A7D500\" stroke-width=\"0.961538\"></rect><rect x=\"1.8335\" y=\"1.1665\" width=\"22.6667\" height=\"22.6667\" rx=\"11.3333\" fill=\"#FEDB00\"></rect><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M8.66954 5.76908C10.0008 4.87956 11.5659 4.40479 13.167 4.40479C15.314 4.40479 17.3731 5.25767 18.8912 6.77583C20.4094 8.29398 21.2623 10.353 21.2623 "
+    }
+  }
+}

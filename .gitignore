@@ -1,0 +1,69 @@
+# Dependencies
+node_modules/
+server/node_modules/
+
+# Build outputs
+dist/
+dist-ssr/
+*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Testing & Debug files
+test-*.js
+debug-*.js
+*-test-output.txt
+debug.txt
+
+# Pharmacy structure files (development only)
+*-structure.json
+*-detailed.json
+*-debug-detailed.json
+search-result.json
+
+# Cookies and session data
+cookies.json
+server/cookies.json
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS files
+Thumbs.db
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+
+# Vercel
+.vercel
+
+# Optional: Coverage directory
+coverage/
+.nyc_output/

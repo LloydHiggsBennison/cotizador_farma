@@ -1,0 +1,13 @@
+{
+  "selector": ".product",
+  "count": 8,
+  "outerHTML": "<div class=\"product product-tile-wrapper h-100 w-100 pb-lg-4 pb-3\" data-show-quickview-on-product-tile=\"true\" data-show-add-to-cart-cta-on-product-tile=\"true\" data-pid=\"9257\">\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<div class=\"product-tile h-100 d-flex flex-column justify-space-between bg-white  \" data-pid=\"9257\" data-bundled-products=\"null\" data-plp-default-quantity=\"1.0\" data-categories=\"Laboratorio Saval,CMR-medicamentos,Antitusivos,Novedades,Medicamentos,Esenciales,Invierno Copec Pay,Antigripales y analgésicos,Botiquín Respiratorio,Jarabes para la tos descongestionantes y vitaminas,Botiquin invierno,Muxol,Botiquín Invierno,Invierno,Cuidado Invierno,Especial Jarabes,Productos de invierno,Fin Del Invierno desde $990,Botiquín de invierno,Medicamentos,Medicamentos\">\n    <!-- dwMarker=\"product\" dwContentID=\"912c7a07ade98b5b76b21eea4d\" -->\n    \n<div class=\"extra-badges-bien-estar d-flex flex-column\">\n    \n    \n        \n    \n</div>\n\n<div class=\"image-container position-relative overflow-hidden\">\n    <a hr",
+  "className": "product product-tile-wrapper h-100 w-100 pb-lg-4 pb-3",
+  "children": [
+    {
+      "tag": "DIV",
+      "className": "product-tile h-100 d-flex flex-column justify-space-between bg-white  ",
+      "text": "\n    \n    \n\n    \n    \n        \n    \n\n\n\n    \n        \n    \n\n    \n\n    \n    \n        \n        \n       "
+    }
+  ]
+}

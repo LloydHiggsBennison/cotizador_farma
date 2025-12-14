@@ -1,0 +1,12 @@
+{
+  "selectors": {
+    ".product": {
+      "count": 24,
+      "sample": {
+        "html": "<div class=\"product clickable\"><div class=\"inner-product-box\"><div class=\"product-image\"><div class=\"discount-promo\">-44%<span class=\"text\"></span></div><a href=\"/products/kitadol-b-paracetamol-500mg-24-comprimidos?default_sku=430924&amp;queryID=043dbb1e2812da29a07035141317d843\"><img class=\"img-responsive\" alt=\"Kitadol (B) Paracetamol 500mg 24 Comprimidos\" src=\"https://static.salcobrandonline.cl/spree/products/47493/small/430924-2.jpg?1641476750\"><div class=\"overlay\"></div></a><ul class=\"links\"><li data-variant-id=\"8193\"><a href=\"/products/kitadol-b-paracetamol-500mg-24-comprimidos/preview?default_sku=430924&amp;queryID=043dbb1e2812da29a07035141317d843\" data-remote=\"true\"><i class=\"fa fa-expand\"></i></a></li></ul></div><div class=\"info\"><a href=\"/products/kitadol-b-paracetamol-500mg-24-com",
+        "className": "product clickable"
+      }
+    }
+  },
+  "customElements": []
+}

@@ -1,0 +1,12 @@
+{
+  "[class*=\"card\"]": {
+    "count": 11,
+    "sample": {
+      "html": "<span _ngcontent-serverapp-c117=\"\" class=\"py-4 font-open px-8 items-center rounded-32 bg-pill-card text-accent-darkest text-12 font-bold inline-flex gap-6 ng-star-inserted\" style=\"background-color: rgb(212, 244, 193); color: rgb(5, 123, 49);\"><at-icon _ngcontent-serverapp-c117=\"\"><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><",
+      "className": "py-4 font-open px-8 items-center rounded-32 bg-pill-card text-accent-darkest text-12 font-bold inline-flex gap-6 ng-star-inserted",
+      "tagName": "SPAN"
+    }
+  },
+  "price_elements_count": 5,
+  "name_elements_count": 2
+}

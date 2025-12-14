@@ -1,0 +1,18 @@
+{
+  "selector": "[class*=\"product\"]",
+  "count": 3,
+  "outerHTML": "<div _ngcontent-serverapp-c43=\"\" class=\"w-full text-productmas-dark h-40 flex flex-row items-center justify-between rounded-sm border border-productmas mt-9 overflow-hidden mb-16 cursor-pointer hover:text-white\"><div _ngcontent-serverapp-c43=\"\" class=\"bg-productmas h-full flex flex-row items-center px-8\"><img _ngcontent-serverapp-c43=\"\" data-src=\"assets/productos-mas.png\" alt=\"club-silver\" class=\"lazyload\"></div><div _ngcontent-serverapp-c43=\"\" class=\"pl-4 pr-16 bg-white flex w-full h-full flex-row items-center justify-between hover:bg-productmas\"><span _ngcontent-serverapp-c43=\"\" class=\"font-poppins font-semibold leading-normal\">Productos más</span><!----></div></div>",
+  "className": "w-full text-productmas-dark h-40 flex flex-row items-center justify-between rounded-sm border border-productmas mt-9 overflow-hidden mb-16 cursor-pointer hover:text-white",
+  "children": [
+    {
+      "tag": "DIV",
+      "className": "bg-productmas h-full flex flex-row items-center px-8",
+      "text": ""
+    },
+    {
+      "tag": "DIV",
+      "className": "pl-4 pr-16 bg-white flex w-full h-full flex-row items-center justify-between hover:bg-productmas",
+      "text": "Productos más"
+    }
+  ]
+}

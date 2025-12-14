@@ -1,0 +1,13 @@
+{
+  "selector": ".product",
+  "count": 3,
+  "outerHTML": "<li class=\"product type-product post-86745 status-publish first instock product_cat-salud has-post-thumbnail shipping-taxable purchasable product-type-variable has-default-attributes\">\n\t\t\t<div class=\"product-loop-wrapper\">\n\t\t<div class=\"product-loop-image-wrapper\">\t\t<div class=\"product-loop-action\"></div>\n\t\t<a href=\"https://www.farmaciabosques.com/ambroxol-15-mg-x-100l-jbe/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img width=\"300\" height=\"300\" src=\"https://www.farmaciabosques.com/wp-content/uploads/2023/12/7800063130279-300x300.jpeg\" class=\"attachment-woocommerce_thumbnail size-woocommerce_thumbnail product-loop-image\" alt=\"Imagen del producto\" decoding=\"async\" srcset=\"https://www.farmaciabosques.com/wp-content/uploads/2023/12/7800063130279-300x300.jpeg 300w, https://www.farmaciabosques.com/wp-content/uploads/2023/12/7800063130279-100x100.jpeg 100w, https://www.farmaciabosques.com/wp-content/uploads/2023/12/7800063130279-600x600.jpeg 600w, https://www.farmac",
+  "className": "product type-product post-86745 status-publish first instock product_cat-salud has-post-thumbnail shipping-taxable purchasable product-type-variable has-default-attributes",
+  "children": [
+    {
+      "tag": "DIV",
+      "className": "product-loop-wrapper",
+      "text": "\n\t\t\t\t\n\t\t\t\t\n\t\t\tAMBROXOL 15 MG X 100L JBE\t\t\n\t\t$3.190\n\n  \n    \n      \n        image/svg+xml\n        \n  "
+    }
+  ]
+}
