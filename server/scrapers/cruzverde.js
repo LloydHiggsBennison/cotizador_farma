@@ -1,87 +1,66 @@
-const puppeteer = require('puppeteer-extra');
-const StealthPlugin = require('puppeteer-extra-plugin-stealth');
-puppeteer.use(StealthPlugin());
+const axios = require('axios');
+const cheerio = require('cheerio');
 
 const log = (message) => console.log(message);
 
 async function scrapeCruzVerde(query) {
-    log('[Cruz Verde] Starting (Puppeteer)...');
+    log('[Cruz Verde] Starting (Axios + Cheerio)...');
 
     try {
-        const browser = await puppeteer.launch({
-            headless: "new",
-            args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage']
-        });
-
-        const page = await browser.newPage();
-        await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36');
-
         const url = `https://www.cruzverde.cl/search?query=${encodeURIComponent(query)}`;
         log(`[Cruz Verde] Loading: ${url}`);
 
-        await page.goto(url, {
-            waitUntil: 'domcontentloaded',
-            timeout: 20000
+        const { data } = await axios.get(url, {
+            headers: {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36'
+            },
+            timeout: 10000
         });
 
-        // Wait for products to load
-        try {
-            await page.waitForSelector('ml-new-card-product', { timeout: 8000 });
-        } catch (e) {
-            await new Promise(resolve => setTimeout(resolve, 2000));
-        }
+        const $ = cheerio.load(data);
+        const products = [];
 
-        // Extract product information
-        const products = await page.evaluate(() => {
-            const results = [];
-            const productElements = document.querySelectorAll('ml-new-card-product');
+        $('ml-new-card-product').each((i, el) => {
+            if (i >= 6) return; // Limit to 6 products
 
-            productElements.forEach((el, i) => {
-                if (i >= 6) return; // Limit to 6 products
+            // Extract product name
+            const nameEl = $(el).find('[class*="name"], [class*="title"], h2, h3').first();
+            const name = nameEl.text().trim();
 
-                // Extract product name
-                const nameEl = el.querySelector('[class*="name"], [class*="title"], h2, h3');
-                const name = nameEl ? nameEl.textContent.trim() : '';
+            // Extract laboratory/brand
+            const brandEl = $(el).find('p.text-gray-dark.italic.uppercase, p.italic.uppercase').first();
+            const brand = brandEl.text().trim() || 'Genérico';
 
-                // Extract laboratory/brand from paragraph
-                const brandEl = el.querySelector('p.text-gray-dark.italic.uppercase, p.italic.uppercase');
-                const brand = brandEl ? brandEl.textContent.trim() : 'Genérico';
+            // Extract price
+            const priceEl = $(el).find('ml-price-tag-v2, [class*="price"]').first();
+            const priceText = priceEl.text().trim();
+            const priceMatch = priceText.match(/[\d.]+/);
+            const price = priceMatch ? parseInt(priceMatch[0].replace(/\./g, '')) : 0;
 
-                // Extract price
-                const priceEl = el.querySelector('ml-price-tag-v2, [class*="price"]');
-                const priceText = priceEl ? priceEl.textContent.trim() : '0';
-                const priceMatch = priceText.match(/[\d.]+/);
-                const price = priceMatch ? parseInt(priceMatch[0].replace(/\./g, '')) : 0;
+            // Extract image
+            const imgEl = $(el).find('img').first();
+            const image = imgEl.attr('src') || imgEl.attr('data-src') || '';
 
-                // Extract image
-                const imgEl = el.querySelector('img');
-                const image = imgEl ? (imgEl.getAttribute('src') || imgEl.getAttribute('data-src') || '') : '';
+            // Extract product URL
+            const linkEl = $(el).find('a[href]').first();
+            const productUrl = linkEl.attr('href') || '';
 
-                // Extract product URL
-                const linkEl = el.querySelector('a[href]');
-                const productUrl = linkEl ? linkEl.getAttribute('href') : '';
-
-                if (name && price > 0) {
-                    results.push({
-                        id: `cruzverde-${i}`,
-                        medicineName: name,
-                        medicineBrand: brand, // Extract from HTML
-                        medicineType: 'Medicamento',
-                        medicineImage: image.startsWith('http') ? image : `https://www.cruzverde.cl${image}`,
-                        pharmacyName: 'Cruz Verde',
-                        pharmacyLogo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Cruz_Verde_logo.svg/2560px-Cruz_Verde_logo.svg.png',
-                        price: price,
-                        normalPrice: price,
-                        stock: true,
-                        productUrl: productUrl.startsWith('http') ? productUrl : `https://www.cruzverde.cl${productUrl}`
-                    });
-                }
-            });
-
-            return results;
+            if (name && price > 0) {
+                products.push({
+                    id: `cruzverde-${i}`,
+                    medicineName: name,
+                    medicineBrand: brand,
+                    medicineType: 'Medicamento',
+                    medicineImage: image.startsWith('http') ? image : `https://www.cruzverde.cl${image}`,
+                    pharmacyName: 'Cruz Verde',
+                    pharmacyLogo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Cruz_Verde_logo.svg/2560px-Cruz_Verde_logo.svg.png',
+                    price: price,
+                    normalPrice: price,
+                    stock: true,
+                    productUrl: productUrl.startsWith('http') ? productUrl : `https://www.cruzverde.cl${productUrl}`
+                });
+            }
         });
-
-        await browser.close();
 
         log(`[Cruz Verde] Found ${products.length} results`);
         return products;
