@@ -1,0 +1,19 @@
+{
+    "name": "cotizador-farmacias",
+    "version": "1.0.0",
+    "description": "Backend server for pharmacy price comparison",
+    "main": "server/index.js",
+    "scripts": {
+        "start": "node server/index.js"
+    },
+    "engines": {
+        "node": "20.x"
+    },
+    "keywords": [
+        "pharmacy",
+        "price comparison",
+        "scraper"
+    ],
+    "author": "Lloyd Higgs Bennison",
+    "license": "PROPRIETARY"
+}
