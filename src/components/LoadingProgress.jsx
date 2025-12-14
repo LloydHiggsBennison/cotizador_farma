@@ -68,8 +68,8 @@ const LoadingProgress = () => {
                                 <div
                                     key={pharmacy.name}
                                     className={`flex items-center space-x-3 p-3 rounded-lg transition-all duration-300 ${isCurrent ? 'bg-blue-50 border border-blue-200' :
-                                        isCompleted ? 'bg-green-50 border border-green-200' :
-                                            'bg-white border border-slate-200'
+                                            isCompleted ? 'bg-green-50 border border-green-200' :
+                                                'bg-white border border-slate-200'
                                         }`}
                                 >
                                     <div className="flex-shrink-0">
@@ -86,8 +86,8 @@ const LoadingProgress = () => {
 
                                     <div className="flex-1">
                                         <p className={`font-medium ${isCompleted ? 'text-green-700' :
-                                            isCurrent ? 'text-primary' :
-                                                'text-slate-400'
+                                                isCurrent ? 'text-primary' :
+                                                    'text-slate-400'
                                             }`}>
                                             {pharmacy.name}
                                         </p>
