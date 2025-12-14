@@ -10,25 +10,42 @@ async function scrapeDrSimi(query) {
     try {
         const browser = await puppeteer.launch({
             headless: "new",
-            args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage']
+            args: [
+                '--no-sandbox',
+                '--disable-setuid-sandbox',
+                '--disable-dev-shm-usage',
+                '--disable-accelerated-2d-canvas',
+                '--disable-gpu'
+            ]
         });
 
         const page = await browser.newPage();
+
+        // Block unnecessary resources for faster loading
+        await page.setRequestInterception(true);
+        page.on('request', (req) => {
+            const resourceType = req.resourceType();
+            if (resourceType === 'image' || resourceType === 'stylesheet' || resourceType === 'font' || resourceType === 'media') {
+                req.abort();
+            } else {
+                req.continue();
+            }
+        });
         await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36');
 
         const url = `https://www.drsimi.cl/${encodeURIComponent(query)}?_q=${encodeURIComponent(query)}&map=ft`;
         log(`[Dr. Simi] Loading: ${url}`);
 
         await page.goto(url, {
-            waitUntil: 'domcontentloaded',
-            timeout: 20000
+            waitUntil: 'networkidle2',
+            timeout: 15000
         });
 
         // Wait for products to load
         try {
             await page.waitForSelector('.vtex-search-result-3-x-galleryItem', { timeout: 5000 });
         } catch (e) {
-            await new Promise(resolve => setTimeout(resolve, 1500));
+            await new Promise(resolve => setTimeout(resolve, 1000));
         }
 
         // Extract product information
