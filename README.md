@@ -100,6 +100,18 @@ node index.js
 
 Los archivos estáticos se servirán desde la carpeta `dist`.
 
+### 🚀 Deployment en Producción
+
+Este proyecto está configurado para desplegarse con:
+- **Frontend**: Vercel (interface de usuario)
+- **Backend**: Railway (API y scrapers)
+
+**📖 [Ver guía completa de deployment](DEPLOYMENT.md)** - Instrucciones paso a paso para desplegar en Vercel y Railway.
+
+**Variables de entorno requeridas:**
+- `VITE_API_URL`: URL del backend en Railway (formato: `https://tu-proyecto.up.railway.app/api/search`)
+
+
 ---
 
 ## 🏗️ Arquitectura del Proyecto
